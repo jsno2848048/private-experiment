@@ -24,7 +24,7 @@ V_r_over_V = R / np.sqrt(R ** 2 + (2 * math.pi * frequency * L - 1 / (2 * math.p
 
 # 공명 각진동수 계산
 omega_resonance = 1 / np.sqrt(L * C)
-st.write(f"공명 진동수 (f_res): {omega_resonance / (2 * math.pi):.2f} rad/s")
+st.write(f"공명 진동수 (f_res): {omega_resonance / (2 * math.pi):.2f} Hz")
 
 # 특정 각진동수에서의 임피던스 계산
 omega_input = st.number_input("임피던스 확인용 각진동수 (rad/s)", value=100.0)
